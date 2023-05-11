@@ -23,7 +23,7 @@ function nextQuestion() {
 
 //check the user's answer
 function checkAnswer() {
-    answers = ajaxRequest.responseXML.getElementsByTagName("a");
+    answers = ajaxreq.responseXML.getElementsByTagName("a");
     a = answers[qn].firstChild.nodeValue;
     answerfield = document.getElementById("answer");
     if (a == answerfield.value) {
